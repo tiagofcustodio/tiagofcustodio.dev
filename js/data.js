@@ -5,7 +5,7 @@ window.PORTFOLIO_I18N = {
   common: {
     fullName: "Tiago Filipe Fernandes dos Santos Alves Custódio",
     shortName: "Tiago Custódio",
-    location: "Estrada Nova nº 116, Azoia, Portugal",
+    location: "Sintra",
     phone: "(+351) 913 984 951",
     phoneLink: "tel:+351913984951",
     email: "tiagofcustodio@gmail.com",
