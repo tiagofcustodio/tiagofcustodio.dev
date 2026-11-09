@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiago Custódio | Python (Django) Developer &amp; Cybersecurity Specialist</title>
+  <meta name="description" content="Interactive portfolio of Tiago Filipe Fernandes dos Santos Alves Custódio — Python (Django) Software Engineering, Cisco-Certified Cybersecurity (Ethical Hacking, Network Defense, Endpoint Security), and Systems Administration." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>window.DEFAULT_LANG = 'en';</script>
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+  <!-- Interactive Cursor Spotlight -->
+  <div id="cursor-spotlight" class="cursor-spotlight"></div>
+
+  <!-- Multi-Layer Parallax Background Universe -->
+  <div class="parallax-universe" aria-hidden="true">
+    <canvas id="cyber-canvas"></canvas>
+    <div class="parallax-grid-plane" data-parallax-speed="-0.15" data-mouse-depth="14"></div>
+    <div class="parallax-orb orb-cyan" data-parallax-speed="-0.25" data-mouse-depth="-28"></div>
+    <div class="parallax-orb orb-purple" data-parallax-speed="0.18" data-mouse-depth="32"></div>
+    <div class="parallax-orb orb-emerald" data-parallax-speed="-0.12" data-mouse-depth="20"></div>
+  </div>
+
+  <!-- Floating Glass Header -->
+  <header class="site-header">
+    <nav class="nav-glass" aria-label="Main Navigation">
+      <a href="#top" class="brand-logo">
+        <span class="brand-monogram">TC</span>
+        <span>Tiago Custódio</span>
+        <span class="brand-status-dot" title="Available for Software &amp; Cybersecurity roles"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+        <li><a href="#certificados" data-i18n="navCerts">Certificates (12)</a></li>
+        <li><a href="#projetos" data-i18n="navProjects">Projects</a></li>
+        <li><a href="#cv" data-i18n="navCv">Experience &amp; CV</a></li>
+        <li><a href="#terminal" data-i18n="navTerminal">Terminal</a></li>
+        <li><a href="#contacto" data-i18n="navContact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Bilingual PT / EN Switcher -->
+        <div class="lang-switch" role="group" aria-label="Select language">
+          <button type="button" class="lang-btn" data-set-lang="pt" title="Português">PT</button>
+          <button type="button" class="lang-btn active" data-set-lang="en" title="English">EN</button>
+        </div>
+
+        <button type="button" class="btn btn-glass btn-sm open-cv-modal-btn" data-i18n="btnViewCv">
+          View CV (PDF)
+        </button>
+        <a href="assets/cv/Tiago_Custodio_CV.pdf" download class="btn btn-primary btn-sm" data-i18n="btnDownloadCv">
+          Download CV
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="parallax-watermark" style="top: 14%; left: -4%;" data-parallax-speed="0.22" data-parallax-x="-0.12">
+        PYTHON // CYBERSEC
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content" data-parallax-speed="-0.06">
+          <div class="hero-badge-pill">
+            <span class="brand-status-dot"></span>
+            <span data-i18n="heroPill">Python (Django) • Cisco Cybersecurity Verified • Systems &amp; Networks</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tiago <span class="gradient-text">Custódio</span>
+          </h1>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-top: -10px; margin-bottom: 14px; font-family: var(--font-mono);">
+            Tiago Filipe Fernandes dos Santos Alves Custódio
+          </p>
+
+          <div class="hero-role-rotator" aria-live="polite">
+            <span>&gt;</span>
+            <span id="typewriter-text">Python &amp; Django Developer</span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-bio" data-i18n-html="heroBioHtml">
+            Versatile professional with a strong technical foundation, combining extensive experience in
+            <strong>systems diagnostics, network configuration, and IT support</strong> with advanced skills in
+            <strong>Python (Django)</strong> and <strong>Cisco-certified Cybersecurity training</strong>
+            (Network Defense, Endpoint Security, and Ethical Hacking) to deliver efficient, robust, and secure technology solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#certificados" class="btn btn-primary" data-i18n="heroCtaCerts">
+              Explore 12 Verified Certifications
+            </a>
+            <a href="#projetos" class="btn btn-glass" data-i18n="heroCtaProjects">
+              View Projects &amp; Code
+            </a>
+            <button type="button" class="btn btn-emerald open-cv-modal-btn" data-i18n="heroCtaCv">
+              Open Interactive CV (PDF)
+            </button>
+          </div>
+
+          <div class="hero-quick-links">
+            <a href="https://github.com/tiagofcustodio" target="_blank" rel="noopener" class="social-chip">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://www.linkedin.com/in/tiago-custodio-19a350299" target="_blank" rel="noopener" class="social-chip">
+              <span>LinkedIn</span> ↗
+            </a>
+            <a href="https://www.credly.com/users/tiago-custodio.71ba3a41/badges#credly" target="_blank" rel="noopener" class="social-chip">
+              <span>Credly Badges</span> ↗
+            </a>
+            <a href="mailto:tiagofcustodio@gmail.com" class="social-chip">
+              <span>tiagofcustodio@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-stage">
+          <div class="portrait-orbital-system" data-parallax-speed="0.08" data-mouse-depth="18">
+            <div class="orbital-ring"></div>
+            <div class="orbital-ring orbital-ring-outer"></div>
+
+            <div class="portrait-frame">
+              <img src="assets/images/tiago-profile.jpg" alt="Tiago Custódio" />
+            </div>
+
+            <div class="floating-satellite sat-top-left" data-parallax-speed="-0.14" data-mouse-depth="-26">
+              <img src="assets/images/badges/junior-cybersecurity-analyst.png" alt="Badge Junior Cybersecurity Analyst" />
+              <div class="satellite-meta">
+                <strong>Cybersecurity Analyst</strong>
+                <span>Cisco Verified Career Path</span>
+              </div>
+            </div>
+
+            <div class="floating-satellite sat-top-right" data-parallax-speed="0.12" data-mouse-depth="24">
+              <img src="assets/images/badges/tokio-python-programming.png" alt="Badge Tokio School Python" />
+              <div class="satellite-meta">
+                <strong>Python &amp; Django</strong>
+                <span>Tokio School Professional</span>
+              </div>
+            </div>
+
+            <div class="floating-satellite sat-bottom-left" data-parallax-speed="0.16" data-mouse-depth="-20">
+              <img src="assets/images/badges/ethical-hacker.png" alt="Badge Ethical Hacker" />
+              <div class="satellite-meta">
+                <strong>Ethical Hacker</strong>
+                <span>Penetration Testing &amp; Defense</span>
+              </div>
+            </div>
+
+            <div class="floating-satellite sat-bottom-right" data-parallax-speed="-0.11" data-mouse-depth="30">
+              <img src="assets/images/badges/python-essentials-2.png" alt="Badge Python Essentials 2" />
+              <div class="satellite-meta">
+                <strong>Python Essentials 1 &amp; 2</strong>
+                <span>OpenEDG Python Institute</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container stats-ribbon" data-parallax-speed="-0.04">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">12<span>+</span></div>
+          <div class="stat-label" data-i18n="stat1Label">Verified Certifications &amp; Badges (Cisco &amp; Tokio)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">10<span data-i18n="stat2Suffix">+ Years</span></div>
+          <div class="stat-label" data-i18n="stat2Label">Experience in Diagnostics, Systems &amp; Team Coordination</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">20<span>/20</span></div>
+          <div class="stat-label" data-i18n="stat3Label">Top Final Technical Distinction Grade (CEPRA)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">C1<span> EN</span></div>
+          <div class="stat-label" data-i18n="stat4Label">Native Portuguese • Fluent English (C1) • Spanish</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="skills" class="section">
+      <div class="parallax-watermark" style="top: 8%; right: -6%;" data-parallax-speed="-0.16" data-parallax-x="0.1">
+        BENTO // STACK
+      </div>
+
+      <div class="container">
+        <div class="section-header" data-parallax-speed="-0.03">
+          <span class="eyebrow" data-i18n="skillsEyebrow">⚡ Digital &amp; Technical Competencies</span>
+          <h2 class="section-title" data-i18n-html="skillsTitleHtml">
+            Software Engineering, <span class="gradient-text">Cybersecurity &amp; Infrastructure</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">
+            A rare combination of backend software development in Python (Django), Cisco-certified offensive and defensive security, and hands-on mastery of networks, servers, and systems troubleshooting.
+          </p>
+        </div>
+
+        <div id="bento-skills-grid" class="bento-grid"></div>
+      </div>
+    </section>
+
+    <section id="certificados" class="section">
+      <div class="parallax-watermark" style="top: 12%; left: -5%;" data-parallax-speed="0.18" data-parallax-x="-0.08">
+        VERIFIED // CREDENTIALS
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="certsEyebrow">🛡️ Official &amp; Verifiable Credentials</span>
+          <h2 class="section-title" data-i18n-html="certsTitleHtml">
+            Certifications by <span class="gradient-text">Cisco, Python Institute &amp; Tokio School</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="certsSubtitle">
+            Click on any certificate to preview the original official PDF document right in your browser (with verification QR Code) or validate all badges on Credly.
+          </p>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter certificates by category">
+          <button type="button" class="filter-btn active" data-cert-filter="all" data-i18n="certFilterAll">All Certificates (12)</button>
+          <button type="button" class="filter-btn" data-cert-filter="cyber" data-i18n="certFilterCyber">Cybersecurity &amp; Networking (8)</button>
+          <button type="button" class="filter-btn" data-cert-filter="python" data-i18n="certFilterPython">Python &amp; Software (3)</button>
+          <button type="button" class="filter-btn" data-cert-filter="ai" data-i18n="certFilterAi">Artificial Intelligence (1)</button>
+          <a href="https://www.credly.com/users/tiago-custodio.71ba3a41/badges#credly" target="_blank" rel="noopener" class="btn btn-glass btn-sm" style="margin-left:auto;" data-i18n="certCredlyBtn">
+            Verify All on Credly ↗
+          </a>
+        </div>
+
+        <div id="certificates-grid" class="certs-grid"></div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="parallax-watermark" style="top: 15%; right: -5%;" data-parallax-speed="-0.15" data-parallax-x="0.09">
+        ARCHITECTURE // CODE
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="projEyebrow">🚀 Technical Projects &amp; Labs</span>
+          <h2 class="section-title" data-i18n-html="projTitleHtml">
+            Practical Solutions in <span class="gradient-text">Python, Django &amp; Cyber Defense</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="projSubtitle">
+            Applications built around clean code principles, Object-Oriented Programming, Security by Design, and automated diagnostics.
+          </p>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-proj-filter="all" data-i18n="projFilterAll">All</button>
+          <button type="button" class="filter-btn" data-proj-filter="python" data-i18n="projFilterPython">Python &amp; Django</button>
+          <button type="button" class="filter-btn" data-proj-filter="cyber" data-i18n="projFilterCyber">Cybersecurity &amp; Networks</button>
+          <button type="button" class="filter-btn" data-proj-filter="ai" data-i18n="projFilterAi">AI &amp; Automation</button>
+        </div>
+
+        <div id="projects-grid" class="projects-grid"></div>
+
+        <div class="github-live-banner">
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.25rem; margin-bottom:4px;" data-i18n="githubBannerTitle">
+              Open Source Repositories on GitHub
+            </h3>
+            <p id="github-live-status" style="color:var(--text-secondary); font-size:0.92rem;" data-i18n="githubBannerSub">
+              Explore all repositories, Python scripts, and ongoing engineering projects on the official GitHub profile.
+            </p>
+          </div>
+          <a href="https://github.com/tiagofcustodio" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="githubBannerBtn">
+            Open github.com/tiagofcustodio ↗
+          </a>
+        </div>
+        <div id="github-live-repos" style="display:none; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; margin-top:18px;"></div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="parallax-watermark" style="top: 20%; left: -4%;" data-parallax-speed="0.14">
+        CAREER // TIMELINE
+      </div>
+
+      <div class="container">
+        <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px; max-width:100%;">
+          <div style="max-width:700px;">
+            <span class="eyebrow" data-i18n="cvEyebrow">📄 Interactive Curriculum Vitae</span>
+            <h2 class="section-title" data-i18n-html="cvTitleHtml">
+              Professional &amp; <span class="gradient-text">Academic Journey</span>
+            </h2>
+            <p class="section-subtitle" data-i18n="cvSubtitle">
+              From high-precision mechatronic diagnostics (20/20 Final Grade at CEPRA) and team leadership to Python (Django) software engineering and Cybersecurity.
+            </p>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button type="button" class="btn btn-glass open-cv-modal-btn" data-i18n="cvPreviewBtn">
+              Preview Original CV (PDF)
+            </button>
+            <a href="assets/cv/Tiago_Custodio_CV.pdf" download class="btn btn-primary" data-i18n="cvDownloadFullBtn">
+              Download Full CV
+            </a>
+          </div>
+        </div>
+
+        <div id="timeline-wrapper" class="timeline-wrapper">
+          <div class="timeline-track">
+            <div id="timeline-laser" class="timeline-laser-progress"></div>
+          </div>
+          <div id="cv-timeline-items"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="terminal" class="section">
+      <div class="container">
+        <div class="section-header" style="margin-inline:auto; text-align:center;">
+          <span class="eyebrow" data-i18n="termEyebrow">💻 Interactive Console Mode</span>
+          <h2 class="section-title" data-i18n-html="termTitleHtml">
+            Inspect Profile via <span class="gradient-text">Terminal</span>
+          </h2>
+          <p class="section-subtitle" data-i18n-html="termSubtitleHtml">
+            Click a quick command chip below or type <code style="color:var(--accent-cyan);">help</code>, <code style="color:var(--accent-cyan);">whoami</code>, <code style="color:var(--accent-cyan);">skills</code>, <code style="color:var(--accent-cyan);">certs</code>, or <code style="color:var(--accent-cyan);">contact</code>.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <span class="terminal-title">tiago@cyber-portfolio:~ (Python 3.12 / Cisco Security Shell)</span>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-emerald);">● ONLINE</span>
+          </div>
+
+          <div class="terminal-chips">
+            <button type="button" class="cmd-chip" data-term-cmd="whoami">whoami</button>
+            <button type="button" class="cmd-chip" data-term-cmd="skills">skills</button>
+            <button type="button" class="cmd-chip" data-term-cmd="certs">certs</button>
+            <button type="button" class="cmd-chip" data-term-cmd="experience">experience</button>
+            <button type="button" class="cmd-chip" data-term-cmd="contact">contact</button>
+            <button type="button" class="cmd-chip" data-term-cmd="cv" data-i18n="termCvChip">cv (open PDF)</button>
+            <button type="button" class="cmd-chip" data-term-cmd="clear">clear</button>
+          </div>
+
+          <div id="terminal-body" class="terminal-body" role="log" aria-live="polite">
+            <div class="term-line"><span class="term-prompt">tiago@cyber-portfolio:~$</span> welcome --init</div>
+            <div class="term-line term-output" data-i18n="termWelcome">Welcome to the interactive terminal of Tiago Filipe Fernandes dos Santos Alves Custódio.
+Specialties: Python (Django) | Cisco Cybersecurity (Ethical Hacking, Network Defense, Endpoint) | Networks &amp; Systems.
+Click any button above or type "help" below to explore!</div>
+          </div>
+
+          <form id="terminal-form" class="terminal-input-row">
+            <span class="term-prompt">tiago@cyber-portfolio:~$</span>
+            <input
+              id="terminal-input"
+              type="text"
+              class="terminal-input"
+              data-i18n-placeholder="termPlaceholder"
+              placeholder="Type a command (e.g. skills, certs, contact) and press Enter..."
+              autocomplete="off"
+              aria-label="Terminal command"
+            />
+            <button type="submit" class="btn btn-primary btn-sm" data-i18n="termRunBtn">Run</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <span class="eyebrow" data-i18n="contactEyebrow">📬 Let's Connect</span>
+            <h2 class="section-title" style="font-size:clamp(1.8rem, 3.2vw, 2.6rem);" data-i18n-html="contactTitleHtml">
+              Ready to join your team in <span class="gradient-text">Software, Cybersecurity, or IT</span>
+            </h2>
+            <p class="section-subtitle" data-i18n="contactSubtitle">
+              Looking for a versatile professional with strong analytical problem-solving, hands-on Python/Django skills, and certified Cybersecurity &amp; Networking training? Get in touch directly.
+            </p>
+
+            <div class="contact-list">
+              <a href="mailto:tiagofcustodio@gmail.com" class="contact-item">
+                <div>
+                  <strong style="display:block; font-size:0.82rem; color:var(--text-muted);" data-i18n="contactEmailLabel">DIRECT EMAIL</strong>
+                  <span>tiagofcustodio@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+351913984951" class="contact-item">
+                <div>
+                  <strong style="display:block; font-size:0.82rem; color:var(--text-muted);" data-i18n="contactPhoneLabel">PHONE / WHATSAPP</strong>
+                  <span>(+351) 913 984 951</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div>
+                  <strong style="display:block; font-size:0.82rem; color:var(--text-muted);" data-i18n="contactLocationLabel">LOCATION</strong>
+                  <span>Estrada Nova nº 116, Azoia, Portugal</span>
+                </div>
+              </div>
+
+              <a href="https://www.linkedin.com/in/tiago-custodio-19a350299" target="_blank" rel="noopener" class="contact-item">
+                <div>
+                  <strong style="display:block; font-size:0.82rem; color:var(--text-muted);">LINKEDIN</strong>
+                  <span>linkedin.com/in/tiago-custodio-19a350299 ↗</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <h3 style="font-family:var(--font-display); font-size:1.35rem; margin-bottom:4px;" data-i18n="contactFormTitle">
+              Send a Quick Message
+            </h3>
+            <div class="form-group">
+              <label for="cf-name" data-i18n="contactNameLabel">Your Name / Company</label>
+              <input id="cf-name" type="text" class="form-control" required data-i18n-placeholder="contactNamePlaceholder" placeholder="e.g. Sarah Jenkins — Tech Recruiter" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email" data-i18n="contactYourEmailLabel">Your Email</label>
+              <input id="cf-email" type="email" class="form-control" required data-i18n-placeholder="contactYourEmailPlaceholder" placeholder="name@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="cf-subject" data-i18n="contactSubjectLabel">Subject</label>
+              <input id="cf-subject" type="text" class="form-control" data-i18n-placeholder="contactSubjectPlaceholder" placeholder="Python / Cybersecurity / IT Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="cf-message" data-i18n="contactMsgLabel">Message</label>
+              <textarea id="cf-message" rows="4" class="form-control" required data-i18n-placeholder="contactMsgPlaceholder" placeholder="Hi Tiago, I really enjoyed exploring your interactive portfolio and would love to schedule a chat..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="contactSubmitBtn">
+              Send Message to tiagofcustodio@gmail.com →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © 2026 <strong>Tiago Filipe Fernandes dos Santos Alves Custódio</strong> • <span data-i18n="footerText">Built with Interactive Parallax Scrolling</span> •
+        <a href="https://github.com/tiagofcustodio" target="_blank" rel="noopener" style="color:var(--accent-cyan); text-decoration:none;">GitHub</a> •
+        <a href="https://www.linkedin.com/in/tiago-custodio-19a350299" target="_blank" rel="noopener" style="color:var(--accent-cyan); text-decoration:none;">LinkedIn</a> •
+        <a href="https://www.credly.com/users/tiago-custodio.71ba3a41/badges#credly" target="_blank" rel="noopener" style="color:var(--accent-cyan); text-decoration:none;">Credly</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="pdf-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <strong id="pdf-modal-title" style="font-family:var(--font-display); font-size:1.05rem;">
+          Official Document
+        </strong>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a id="pdf-modal-download" href="#" download class="btn btn-primary btn-sm" data-i18n="modalDownloadBtn">
+            Download PDF
+          </a>
+          <button id="pdf-modal-close" type="button" class="btn btn-glass btn-sm" data-i18n="modalCloseBtn">
+            ✕ Close (Esc)
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdf-modal-iframe" title="PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
