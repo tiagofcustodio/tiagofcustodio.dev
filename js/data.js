@@ -94,7 +94,6 @@ window.PORTFOLIO_I18N = {
       contactMsgLabel: "Mensagem",
       contactMsgPlaceholder: "Olá Tiago, gostei muito do teu portfólio e gostaria de agendar uma conversa...",
       contactSubmitBtn: "Enviar Mensagem para contacto@tiagofcustodio.dev →",
-      footerText: "Desenvolvido com Parallax Scrolling Interativo",
       modalCloseBtn: "✕ Fechar (Esc)",
       modalDownloadBtn: "Descarregar PDF",
       cvModalTitle: "Curriculum Vitae — Tiago Custódio"
@@ -566,7 +565,6 @@ window.PORTFOLIO_I18N = {
       contactMsgLabel: "Message",
       contactMsgPlaceholder: "Hi Tiago, I really enjoyed exploring your interactive portfolio and would love to schedule a chat...",
       contactSubmitBtn: "Send Message to contacto@tiagofcustodio.dev →",
-      footerText: "Built with Interactive Parallax Scrolling",
       modalCloseBtn: "✕ Close (Esc)",
       modalDownloadBtn: "Download PDF",
       cvModalTitle: "Curriculum Vitae — Tiago Custódio"
